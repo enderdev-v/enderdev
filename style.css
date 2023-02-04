@@ -11,46 +11,11 @@ body {
   background: #E4E9F7;
 }
 
-
-nav .navbar {
-  position: relative;
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
-  }
-.navbar .menu {
-  display: none;
-}
-.navbar .Logo a{
-  font-size: 25px;
-  font-weight: 500;
-  color: #00a2ab;
-}
-
-.navbar .links {
-  display: flex;
-  align-items: center;
-  padding-right: 30px;
-  margin: 0px 20px;
-}
-.navbar .links li {
-    list-style: none;
-  padding: 6px 1px;
-  margin: 0 2px; 
-font-family: Arial;
-font-weight: bold;
-}
-
 .home {
   height: 100vh;
   width: 100%;
   position: center;
   background-position: center;
-  
   margin-top: 90px;
 }
 .home .icono {
@@ -89,16 +54,29 @@ border-radius: 15px;
   margin: 0px 25px 0 25px;
   text-align: center;
 }
-
-nav.sticky {
+/* Navbar */
+.navbar-scroll {
   color: #fff;
   padding: 15px 20px;
   background-color: #4070f4 
 }
 
-nav.sticky .navbar .Logo a{
+
+
+.navbar-scroll a{
   color: #fff; 
 }
+
+.navbar-scroll .navbar-toggler{
+	color: #ffff;
+}
+
+.navbar-scroll .navbar-item span{
+	color: #ffff;
+}
+
+/* skill */
+
 
 .skills {   
   display: flex;  
@@ -108,23 +86,3 @@ nav.sticky .navbar .Logo a{
 
 /* Movil */
 
-@media (max-width: 780px) {
-  .navbar .menu  {
-    display: flex;
-    width: 50px;
-    heigth: 50px;
-  }
-  .navbar .menu .i {
-    display: ;
-    width: 50px;
-    heigth: 50px;
-  }
-   .navbar .text-nav {
-     display: none
-   }
-  .navbar .button {
-    background: transparent;
-  }
-
-  
-}

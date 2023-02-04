@@ -1,10 +1,11 @@
+
 let nav = document.querySelector("nav")
 
 window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 20) {
-    nav.classList.add("sticky")
+  if (document.documentElement.scrollTop > 15) {
+    nav.classList.add("navbar-scroll")
   } else {
-    nav.classList.remove("sticky")
+    nav.classList.remove("navbar-scroll")
   }
 })
 
