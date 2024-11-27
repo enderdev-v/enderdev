@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Badge */
+@layer components {
+    .badge {
+        @apply px-2.5 py-0.5 mx-1 me-2 font-medium text-white-0 border rounded-lg
+    }
+    .outline {
+        @apply border-blue-600  
+    }
+    .sucess {
+       @apply  bg-green-600 border-gray-900
+    }
+    .danger {
+        @apply bg-red-600 border-gray-900
+    }
+    .beta {
+        @apply bg-yellow-400 border-gray-900
+    }
+    .info  {
+        @apply bg-sky-500 border-gray-900
+    }
+    .discord {
+        @apply bg-sky-500 border-gray-900
+    }
+}
+
+/* Button */
+
+@layer components {
+    .button {
+        @apply px-3 py-2.5 mx-1 my-1 font-bold border rounded-lg dark:text-white-0 text-black-0
+    }
+
+    .outline-info {
+        @apply border-[#0E93DC] hover:bg-sky-300
+    }
+    .outline-success {
+        @apply  border-green-600 hover:bg-green-300  
+    }
+    .outline-danger {
+        @apply  border-red-600 hover:bg-red-500  
+    }
+    .outline-primary {
+        @apply  border-indigo-500 hover:bg-indigo-400 
+    }
+    .outline-secondary {
+        @apply  border-gray-600 hover:bg-gray-400
+    }
+    .outline-warn {
+        @apply  border-yellow-400 hover:bg-yellow-200
+    }
+    .info {
+        @apply border-gray-900 bg-[#0E93DC] hover:bg-sky-700  
+    }
+    .success {
+        @apply border-gray-900 bg-green-400 hover:bg-green-900
+    }
+    .danger {
+        @apply border-gray-900 bg-red-500 hover:bg-red-800  
+    }
+    .primary {
+        @apply border-gray-900 bg-indigo-500  hover:bg-indigo-800
+    }
+    .secondary {
+        @apply border-gray-900 bg-gray-600 hover:text-white-0 hover:bg-gray-700 
+    }
+}
+@layer components {
+    .Dark {
+        @apply dark:bg-gray-300 bg-gray-600
+    }
+    .Blue {
+        @apply bg-blue-600 
+    }
+    .Red {
+        @apply dark:bg-red-500 bg-red-600
+    }
+    .Green {
+        @apply bg-green-600 dark:bg-green-500
+    }
+    .Yellow {
+        @apply bg-yellow-400
+    }
+    .Indigo {
+        @apply bg-indigo-600 dark:bg-indigo-500
+    }
+    .Purple {
+        @apply bg-purple-600 dark:bg-purple-500
+    }
+
+
+    /* Text */
+    .dark {
+        @apply dark:text-white-0 text-black-0
+    }
+    /* .blue {
+        @apply text-blue-700 dark:text-blue-500 
+    }
+    .red {
+        @apply text-red-700 dark:text-red-500
+    }
+    .green {
+        @apply text-green-700 dark:text-green-500
+    }
+    .yellow {
+        @apply text-yellow-600 dark:text-yellow-500
+    }
+    .indigo {
+        @apply text-indigo-700 dark:text-indigo-500
+    }
+    .purple {
+        @apply text-purple-700 dark:text-purple-500
+    } */
+    
+}
