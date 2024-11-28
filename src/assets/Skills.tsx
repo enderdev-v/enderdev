@@ -1,4 +1,4 @@
-import Bar from "../components/Bar";
+import Bar from "@components/Bar";
 
 
 export default function Skill() {
@@ -8,12 +8,12 @@ export default function Skill() {
                 <div className="mt-6 flex justify-center h-30 ">
                     <div className="w-full max-w-2xl p-4">
 
-                        <Bar per={"70%"} title="NodeJS" variant="Dark" />
-                        <Bar per={"60%"} title="HTML/CSS" variant="Blue" />
-                        <Bar per={"80%"} title="React" variant="Dark" />
-                        <Bar per={"10%"} title="Astro" variant="Yellow" />
-                        <Bar per={"90%"} title="Typescript" variant="Dark" />
-                        <Bar per={"80%"} title="Java" variant="Dark" />
+                        <Bar per={"80%"} title="NodeJS" variant="Dark" />
+                        <Bar per={"70%"} title="HTML/CSS" variant="Green" />
+                        <Bar per={"70%"} title="React" variant="Indigo" />
+                        <Bar per={"40%"} title="Astro" variant="Red" />
+                        <Bar per={"80%"} title="Typescript" variant="Blue" />
+                        <Bar per={"65%"} title="Java" variant="Yellow" />
 
                     </div>
                 </div>

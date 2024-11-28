@@ -1,5 +1,5 @@
 import Button from "../components/ui/Button"
-import "../Styles/home.css";
+import "@Styles/home.css";
 
 export default function Home() {
     const link = "https://github.com/enderdev-v"

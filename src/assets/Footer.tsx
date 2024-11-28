@@ -6,7 +6,7 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="https://www.youtube.com/@enderdev-v/" target="_blank" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="/enderdev.jpg" className="h-8 w-8 border-3 rounded-full border-solid border-tinted-200" alt="Flowbite Logo" width={32} height={32} />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white-0 text-black-0">endkachu</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white-0 text-black-0">ender</span>
                     </a>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
                         <li>

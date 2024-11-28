@@ -21,7 +21,7 @@ export default function Changetheme() {
     }
     return (
         <button onClick={handleChange} className="block y-2 x-3 border-0 font-medium">
-        <i className={theme === "light" ? "bx bx-moon" : "bx bx-sun text-xl text-white-0"}></i>
+        <i className={theme === "light" ? "bx bx-moon text-white-0" : "bx bx-sun text-xl text-white-0"}></i>
         </button>
     );
 };

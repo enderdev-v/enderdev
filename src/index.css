@@ -9,7 +9,7 @@ html {
 
 @layer components {
     .navbar {
-		@apply bg-Ctblue-300 border-gray-200 dark:bg-Ctblue-100
+		@apply bg-Ctblue-300 dark:bg-Ctblue-100 border-gray-600
 	}
 	.navbar .menu {
 		@apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#cdc9ff] rounded-lg md:hidden hover:bg-[#0044a9] focus:outline-none focus:ring-2 focus:ring-[#0044a9] dark:text-gray-400
@@ -17,7 +17,7 @@ html {
 	.navbar .links {
 		@apply hidden w-full md:block md:w-auto 
 	}
-	.open .links {
-		@apply flex flex-col left-0 dark:text-white-0 text-black-0 dark:bg-indigo-600 bg-indigo-400  fixed w-full p-0 m-0 h-0 top-12 transition-all delay-300 ease-linear
+	 .open .links {
+		@apply flex flex-col left-0 border-transparent text-white-0 dark:bg-Ctblue-100 bg-Ctblue-300 fixed w-full p-0 m-0 h-0 top-12 transition-all delay-300 ease-linear
 	}
 }
