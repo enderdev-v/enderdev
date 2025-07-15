@@ -1,17 +1,26 @@
 export default function About() {
     return (
-        <>
-            <section className="pt-4 justify-center mr-6 ml-8 my-12" id="About">
-                <div className="p-4 flex justify-center">
-                    <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/enderdev.jpg" alt="" />
-                            <div className="flex flex-col justify-between p-4 leading-normal">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white-0">About Me!</h5>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-200">Bueno yo he desarrolado algunas cuantos proyectos chiquitos como seria Ryosaki y pese a que hize puros bots tengo planeado tener proyectos fuera de ahi nomas de momento no</p>
-                            </div>
+
+        <section className="pt-4   mr-6 ml-8 my-12 " id="About">
+            <h4 className="font-bold text-3xl dark:text-white-200 text-gray-800 text-center p-4 pb-12">About me!</h4>
+            <div className="flex items-center object-center justify-center">
+                <div className="h-64 w-100  rounded-2xl shadow-lg dark:bg-gray-900/50 dark:shadow-gray-700 shadow-gray-900 bg-neutral-800/50 rotate-2 z-1">
+                    <div className="h-64 w-100 rounded-xl dark:bg-gray-800/50 bg-zinc-600/50 relative -rotate-3 dark:shadow-gray-600 shadow-gray-800">
+                        <div className="h-32 w-100 rotate-2 p-12">
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-200">
+                                <span className="font-bold">Just a simple dev</span>
+                                <br /><br />
+                                I develop somethings that I like, I like developing with React, NodeJS, and Typescript. 
+                                <br />
+                                Also I make Discord Bots with Seyfert and DJS (I don't use it much). 
+                                <br />
+                                Anything else?
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
+
     );
 };
