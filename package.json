@@ -32,16 +32,16 @@
     "vite": "^5.4.11"
   },
   "imports": {
-    "@/*": [
+    "#/*": [
       "src/*"
     ],
-    "@components/*": [
+    "#components/*": [
       "src/components/*"
     ],
-    "@ui/*": [
-      "src/componets/ui/*"
+    "#ui/*": [
+      "src/components/ui/*"
     ],
-    "@Styles/*": [
+    "#Styles/*": [
       "src/Styles/*"
     ]
   },

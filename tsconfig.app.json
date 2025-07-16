@@ -38,7 +38,8 @@
       "@Styles/*": [
         "src/Styles/*"
       ]
-    }
+    },
+    "types": ["node"]
   },
   "include": ["src"]
 }
