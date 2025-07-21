@@ -12,7 +12,9 @@ This is a list for probably questions you have
 
 ### Can I Contribute?
 
-No, this is a personal project and I do not accept contributions at this time. Maybe you can contribute in say me what you think to I do it better for the website but not in code 
+No, this is a personal project and I do not accept contributions at this time. 
+> [!Note]
+> Maybe you can contribute in say me what you think to I do it better for the website but not in code 
 
 ### How can I contact you?
 

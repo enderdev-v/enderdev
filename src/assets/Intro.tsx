@@ -1,7 +1,7 @@
 import Button from "../components/ui/Button"
 import "@Styles/home.css";
 
-export default function Home() {
+export default function Intro() {
     return ( 
         <section className="mt-10">
             <div className="flex justify-center items-center p-3 m-4">

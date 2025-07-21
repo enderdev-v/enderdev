@@ -1,18 +1,32 @@
-import About from "./assets/About";
-import Footer from "./assets/Footer";
-import Home from "./assets/Home";
-import Navbar from "./assets/navbar";
-import Skills from "./assets/Skills";
-import './index.css'
+import { useEffect, useState } from "react";
+import Home from "./pages/Home";
+import Page404 from "./pages/404";
+import Projects from "./pages/projects";
+const eventname = 'statechange';
 
 export default function App() {
-  return (
-    <>
-    <Navbar></Navbar>
+
+  const [path, setPath] = useState(window.location.pathname)
+  window.history.pushState({}, '', path);
+  window.dispatchEvent(new Event(eventname));
+  
+  useEffect(() => {
+    const urlChange = () => {
+      setPath(window.location.pathname);
+    }
+
+    window.addEventListener(eventname, urlChange);
+    return () => {
+      window.removeEventListener(eventname, urlChange);
+    }
+  }, []);
+
+  return path === "/" ? (
     <Home />
-    <About />
-    <Skills />
-    <Footer />
-    </>
-  )
+  ) : path === "/projects" ?
+    (
+      <Projects />
+    ) : (
+      <Page404 />
+    );
 }
