@@ -1,4 +1,4 @@
-import Button from "@components/UI/Button.tsx"
+import Button from "@components/ui/Button"
 import "@Styles/home.css";
 
 export default function Intro() {
