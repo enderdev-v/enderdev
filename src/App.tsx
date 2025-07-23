@@ -7,8 +7,7 @@ const eventname = 'statechange';
 export default function App() {
 
   const [path, setPath] = useState(window.location.pathname)
-  window.history.pushState({}, '', path);
-  window.dispatchEvent(new Event(eventname));
+  
   
   useEffect(() => {
     const urlChange = () => {
@@ -21,12 +20,12 @@ export default function App() {
     }
   }, []);
 
+
   return path === "/" ? (
     <Home />
-  ) : path === "/projects" ?
-    (
-      <Projects />
-    ) : (
-      <Page404 />
-    );
+  ) : path === "/projects" ? (
+    <Projects />
+  ) : (
+    <Page404 />
+  );
 }

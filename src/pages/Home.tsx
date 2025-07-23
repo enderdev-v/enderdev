@@ -1,8 +1,8 @@
-import About from "../assets/About";
-import Footer from "../assets/Footer";
-import Intro from "../assets/Intro";
-import Navbar from "../assets/navbar";
-import Skills from "../assets/Skills";
+import About from "@components/Sections/About";
+import Footer from "@components/Sections/Footer";
+import Intro from "@components/Sections/Intro";
+import Navbar from "@components/Sections/navbar";
+import Skills from "@components/Sections/Skills";
 import '../index.css'
 
 export default function Home() {
