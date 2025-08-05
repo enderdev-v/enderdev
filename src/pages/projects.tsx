@@ -12,6 +12,7 @@ export default function Projects() {
             <div className="m-10 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8">
                 <Card description="Just a simple bot for discord" href="https://github.com/enderdev-v/enderbot" img={img} link="https://github.com/enderdev-v/enderbot" title="enderbot"></Card>
                 <Card description="Is Close Code but util for discord" href="/" img={img} link="/" title="Ryosaki Bot"></Card>
+                <Card description="Just a simple design for the new tab fro browser :D" href="https://github.com/enderdev-v/DevStartPage" img={img} link="https://dev-start-page.vercel.app/" title="Dev new Tab"></Card>
             </div>
         </>
     );
