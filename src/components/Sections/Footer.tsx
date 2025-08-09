@@ -1,3 +1,4 @@
+import { WindowLocalStorageNames } from "@/constants/constants";
 
 export default function Footer() {
     return (
@@ -14,6 +15,9 @@ export default function Footer() {
                         </li>
                         <li>
                             <a href="https://www.youtube.com/@enderdev-v/" target="_blank" className="hover:underline me-4 md:me-6 dark:text-white-0 text-black-0">Youtube</a>
+                        </li>
+                        <li>
+                            <button className="hover:underline me-4 md:me-6 dark:text-white-0 text-black-0" onClick={() => window.localStorage.removeItem(WindowLocalStorageNames.Theme)}>Delete Cache</button>
                         </li>
                     </ul>
                 </div>
