@@ -1,5 +1,5 @@
 import { ProjectButton } from "@/constants/projects";
-import Button from "@components/ui/Button";
+import Button from "@/components/ui/Button";
 
 interface CardProps {
     img: string;
