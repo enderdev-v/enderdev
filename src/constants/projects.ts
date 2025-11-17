@@ -18,7 +18,7 @@ export const projects: Project[] = [
     {
         title: "Dev New Tab",
         description: "A Design and functional new tab with features interesting for devs.",
-        img: "https://cdn.discordapp.com/attachments/1368395383352590386/1403551710391173171/image.png?ex=6897f6e4&is=6896a564&hm=06a655483c5dfe436bb783cff2badbf1aa58a65888abc5622074100506b53cb7&",
+        img: "https://github.com/enderdev-v/DevStartPage/blob/main/public/Demo.png?raw=true",
         buttons: [
             {
                 icon: "bx bxl-html5",

@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import Page404 from "./pages/404";
 import Projects from "./pages/projects";
 import { Route, Routes } from "react-router-dom";
+import Social from "./pages/social";
 
 export default function App() {
 
@@ -11,6 +12,7 @@ export default function App() {
     <Route path="/" element={<Home />}></Route>
     <Route path="/Projects" element={<Projects />}></Route>
     <Route path="*" element={<Page404 />}></Route>
+    <Route path="/social" element={<Social />}></Route>
     </Routes>
   )
 }
