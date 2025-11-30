@@ -19,6 +19,7 @@ export default function Navbar() {
                 <div className="links" id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 dark:bg-Ctblue-100 bg-Ctblue-300 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-Ctblue-300 md:dark:bg-CtBlue-100 dark:border-gray-700">
                         <Navlink to="/">Home</Navlink>
+                        <Navlink to="/social">Social</Navlink>
                         <Navlink to="/#skills">Skills</Navlink>
                         <Navlink to="/projects">Projects</Navlink>
                         <Changetheme />
