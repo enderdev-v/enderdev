@@ -1,8 +1,9 @@
-import SocialCard from "@/components/SocialCard"
+
 
 export const WindowLocalStorageNames = {
     Theme: "theme"
 }
+/*
 // interface for project 
 export interface SocialButton {
     icon: string;
@@ -59,5 +60,5 @@ export const socialCards: SocialCard[] = [
         ],
         avatar: "https://cdn.bsky.app/img/avatar/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreicwe4jvwt25zgni2raxq3bww42b4iyccyqxox26ulrb75d2obfsri@jpeg"
 
-    },
-]
+            },
+        ]   */

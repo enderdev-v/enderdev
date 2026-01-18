@@ -1,18 +1,11 @@
-import Home from "./pages/Home";
-import Page404 from "./pages/404";
-import Projects from "./pages/projects";
-import { Route, Routes } from "react-router-dom";
-import Social from "./pages/social";
+import Home from "./Pages/Home"
+import { Routes, Route } from "react-router";
+import "./css/index.css"
 
 export default function App() {
-
-
   return (
     <Routes>
-    <Route path="/" element={<Home />}></Route>
-    <Route path="/Projects" element={<Projects />}></Route>
-    <Route path="*" element={<Page404 />}></Route>
-    <Route path="/social" element={<Social />}></Route>
+      <Route path="/" element={<Home />}></Route>
     </Routes>
   )
 }

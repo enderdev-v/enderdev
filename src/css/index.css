@@ -1,11 +1,48 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss";
 @tailwind utilities;
+@import "./theme.css"
+@import "./HomeSections.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+html {
+    transition: background-color 3s, color 0.3s;
+}
+
+html::-webkit-scrollbar {
+	width: 0.30rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fffdbe;
+    border-radius: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--color-gray-700);
+    border-radius: 8px;
+}
+
+
+
+@layer components {
+    .navbar {
+		@apply bg-enderBlue border-gray-600;
+	}
+	.navbar .menu {
+		@apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#cdc9ff] rounded-lg md:hidden hover:bg-[#0044a9] focus:outline-none focus:ring-2 focus:ring-[#0044a9] dark:text-gray-400;
+	}
+	.navbar .links {
+		@apply hidden w-full md:block md:w-auto;
+	}
+	 .open .links {
+		@apply flex flex-col left-0 border-transparent text-white bg-enderBlue fixed w-full p-0 m-0 h-0 top-12 transition-all delay-300 ease-linear;
+	}
+}
 /* Badge */
 @layer components {
     .badge {
-        @apply px-2.5 py-0.5 mx-1 me-2 font-medium text-white-0 border rounded-lg
+        @apply px-2.5 py-0.5 mx-1 me-2 font-medium text-whiteText border rounded-lg
     }
     .outline {
         @apply border-blue-600  
@@ -31,7 +68,7 @@
 
 @layer components {
     .button {
-        @apply px-3 py-2.5 mx-1 my-1 font-bold border rounded-lg dark:text-white-0 text-black-0
+        @apply px-3 py-2.5 mx-1 my-1 font-bold border rounded-lg dark:text-whiteText text-blackText
     }
 
     .outline-info {
@@ -65,7 +102,7 @@
         @apply border-gray-900 bg-indigo-500  hover:bg-indigo-800
     }
     .secondary {
-        @apply border-gray-900 bg-gray-600 hover:text-white-0 hover:bg-gray-700 
+        @apply border-gray-900 bg-gray-600 hover:text-whiteText hover:bg-gray-700 
     }
 }
 @layer components {
@@ -90,29 +127,5 @@
     .Purple {
         @apply bg-purple-600 dark:bg-purple-500
     }
-
-
-    /* Text */
-    .dark {
-        @apply dark:text-white-0 text-black-0
-    }
-    /* .blue {
-        @apply text-blue-700 dark:text-blue-500 
-    }
-    .red {
-        @apply text-red-700 dark:text-red-500
-    }
-    .green {
-        @apply text-green-700 dark:text-green-500
-    }
-    .yellow {
-        @apply text-yellow-600 dark:text-yellow-500
-    }
-    .indigo {
-        @apply text-indigo-700 dark:text-indigo-500
-    }
-    .purple {
-        @apply text-purple-700 dark:text-purple-500
-    } */
     
 }

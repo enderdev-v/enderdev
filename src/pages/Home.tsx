@@ -1,18 +1,12 @@
-import About from "@components/Sections/About";
-import Footer from "@components/Sections/Footer";
-import Intro from "@components/Sections/Intro";
-import Navbar from "@components/Sections/navbar";
-import Skills from "@components/Sections/Skills";
-import '../index.css'
+import Intro from "@/components/HomeSections/Introduction";
+import Skill from "@/components/HomeSections/Skills";
+import PageLayout from "@/components/PageLayout";
 
 export default function Home() {
     return (
-        <>
-            <Navbar></Navbar>
-            <Intro />
-            <About />
-            <Skills />
-            <Footer />
-        </>
+        <PageLayout>
+            <Intro></Intro>
+            <Skill></Skill>
+        </PageLayout>
     );
 };
