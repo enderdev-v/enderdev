@@ -3,7 +3,7 @@
 export const WindowLocalStorageNames = {
     Theme: "theme"
 }
-/*
+
 // interface for project 
 export interface SocialButton {
     icon: string;
@@ -58,7 +58,7 @@ export const socialCards: SocialCard[] = [
                 link: "https://bsky.app/profile/enderdev.bsky.social"
             }
         ],
-        avatar: "https://cdn.bsky.app/img/avatar/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreicwe4jvwt25zgni2raxq3bww42b4iyccyqxox26ulrb75d2obfsri@jpeg"
+        avatar: "https://cdn.bsky.app/img/avatar/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreidw5yojcjfhjdro6mecf5fb3vkfp23t4jpud4esv2qnld4wmzfzhm@jpeg"
 
-            },
-        ]   */
+    },
+]   

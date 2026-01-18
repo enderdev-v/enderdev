@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 @theme {
-    --color-enderWhite: #F7FCFF;
+    --color-enderWhite: #F5FAFF;
     --color-enderBlack: #20232E;
     --color-whiteText: #F7F7FF;
     --color-blackText: #0F0F12;
