@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <button  className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse cursor-text">
                         <img src="/enderdev.jpg" className="h-8 w-8 border-3 rounded-full border-solid border-tinted-200" alt="Flowbite Logo" width={32} height={32} />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-whiteText text-blackText">ender</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-whiteText text-blackText">enderdev</span>
                     </button>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
                         <li>
@@ -22,7 +22,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <hr className="my-6 sm:mx-auto border-gray-950 dark:border-gray-100 lg:my-8 " />
-                <span className="block text-sm text-gray-500 sm:text-center"><a href="/" target="_blank" className="hover:underline text-blue-950 dark:text-blue-600">enderCopy</a></span>
+                <span className="block text-lg  text-gray-500 sm:text-center"><a href="/" target="_blank" className="hover:underline text-blue-950 dark:text-blue-600">&copy; enderdev-v</a></span>
             </div>
         </footer>
     );

@@ -9,4 +9,13 @@
     --color-enderBlue: #3A5EDE;
     --color-footerBlack: #2C303D;
     --color-footerWhite: #F0F0FF;
+    --color-white-Card: #E1E2ED;
+    --color-black-Card: #26262B;
+
+    --color-black-about-0: #0C0C12;
+    --color-black-about-1: #11121C;
+    --color-black-about-2: #1B1D2B;
+    --color-white-about-0: #DADAE3;
+    --color-white-about-1: #E6E6F2;
+    --color-white-about-2: #EBEBF2;
 }

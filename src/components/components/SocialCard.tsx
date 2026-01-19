@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function SocialCard({ img, title, description, buttons, avatar }: CardProps) {
     return (
-        <div className="h-80 w-64 mt-10 mb-10 dark:bg-[#26262B] bg-[#E1E2ED] text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out">
+        <div className="h-80 w-64 mt-10 mb-10 dark:bg-black-Card bg-white-Card text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out">
             <div className="mx-2 mt-2">
                 <img className="rounded-lg w-full h-24" src={img} alt={title + " Banner"} height={256} width={256} />
                 <div className="card-content">
