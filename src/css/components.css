@@ -1,0 +1,106 @@
+
+
+@layer components {
+    .navbar {
+		@apply bg-enderBlue border-gray-600;
+	}
+	.navbar .menu {
+		@apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#cdc9ff] rounded-lg md:hidden hover:bg-[#0044a9] focus:outline-none focus:ring-2 focus:ring-[#0044a9] dark:text-gray-400;
+	}
+	.navbar .links {
+		@apply hidden w-full md:block md:w-auto;
+	}
+	 .open .links {
+		@apply flex flex-col left-0 border-transparent text-white bg-enderBlue fixed w-full p-0 m-0 h-0 top-12 transition-all delay-300 ease-linear;
+	}
+}
+/* Badge */
+@layer components {
+    .badge {
+        @apply px-2.5 py-0.5 mx-1 me-2 font-medium text-whiteText border rounded-lg
+    }
+    .outline {
+        @apply border-blue-600  
+    }
+    .sucess {
+       @apply  bg-green-600 border-gray-900
+    }
+    .danger {
+        @apply bg-red-600 border-gray-900
+    }
+    .beta {
+        @apply bg-yellow-400 border-gray-900
+    }
+    .info  {
+        @apply bg-sky-500 border-gray-900
+    }
+    .discord {
+        @apply bg-sky-500 border-gray-900
+    }
+}
+
+/* Button */
+
+@layer components {
+    .button {
+        @apply px-3 py-2.5 mx-1 my-1 font-bold border rounded-lg dark:text-whiteText text-blackText
+    }
+
+    .outline-info {
+        @apply border-[#0E93DC] hover:bg-sky-300
+    }
+    .outline-success {
+        @apply  border-green-600 hover:bg-green-300  
+    }
+    .outline-danger {
+        @apply  border-red-600 hover:bg-red-500  
+    }
+    .outline-primary {
+        @apply  border-indigo-500 hover:bg-indigo-400 
+    }
+    .outline-secondary {
+        @apply  border-gray-600 hover:bg-gray-400
+    }
+    .outline-warn {
+        @apply  border-yellow-400 hover:bg-yellow-200
+    }
+    .info {
+        @apply border-gray-900 bg-[#0E93DC] hover:bg-sky-700  
+    }
+    .success {
+        @apply border-gray-900 bg-green-400 hover:bg-green-900
+    }
+    .danger {
+        @apply border-gray-900 bg-red-500 hover:bg-red-800  
+    }
+    .primary {
+        @apply border-gray-900 bg-indigo-500  hover:bg-indigo-800
+    }
+    .secondary {
+        @apply border-gray-900 bg-gray-600 hover:text-whiteText hover:bg-gray-700 
+    }
+}
+@layer components {
+    .Dark {
+        @apply dark:bg-gray-300 bg-gray-600
+    }
+    .Blue {
+        @apply bg-blue-600 
+    }
+    .Red {
+        @apply dark:bg-red-500 bg-red-600
+    }
+    .Green {
+        @apply bg-green-600 dark:bg-green-500
+    }
+    .Yellow {
+        @apply bg-yellow-400
+    }
+    .Indigo {
+        @apply bg-indigo-600 dark:bg-indigo-500
+    }
+    .Purple {
+        @apply bg-purple-600 dark:bg-purple-500
+    }
+    
+}
