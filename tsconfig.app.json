@@ -24,20 +24,14 @@
 
     /* Custom */ 
 
+    /* Custom */
+
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@ui/*": [
-        "src/componets/ui/*"
-      ],
-      "@Styles/*": [
-        "src/Styles/*"
-      ]
+      "#src/*": ["./src/*"],
+      "#components/*": ["./src/components/*"],
+      "#ui/*": ["./src/componets/ui/*"],
+      "#css/*": ["./src/Styles/*"]
     },
     "types": ["node"]
   },

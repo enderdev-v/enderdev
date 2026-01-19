@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
-@import "./theme.css"
+@import "./theme.css";
 @import "./HomeSections.css";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

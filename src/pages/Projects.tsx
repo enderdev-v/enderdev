@@ -1,6 +1,6 @@
-import { projects } from "@/constants/projects";
-import Card from "@components/components/ProjectCard";
-import PageLayout from "@/components/PageLayout";
+import { projects } from "#src/constants/projects";
+import Card from "#components/components/ProjectCard";
+import PageLayout from "#src/components/PageLayout";
 import '../css/index.css'
 
 export default function Projects() {

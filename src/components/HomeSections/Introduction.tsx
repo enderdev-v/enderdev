@@ -1,5 +1,5 @@
-import Button from "@/components/UI/Button"
-import "@Styles/HomeSections.css"
+import Button from "#src/components/UI/Button"
+import "#css/HomeSections.css"
 
 export default function Intro() {
     return ( 

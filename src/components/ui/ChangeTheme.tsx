@@ -1,4 +1,4 @@
-import { WindowLocalStorageNames } from "@/constants/constants";
+import { WindowLocalStorageNames } from "#src/constants/constants";
 import { useEffect, useState } from "react";
 
 
