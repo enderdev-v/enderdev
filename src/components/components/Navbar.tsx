@@ -2,7 +2,7 @@ import ChangeTheme from "@components/UI/ChangeTheme";
 import Navlink from "@components/UI/NavLink";
 import { NavLink as NvLink } from 'react-router'
 import { useState } from "react";
-import '@src/css/index.css'
+import '@css/index.css'
 
 export default function Navbar() {
     const [togle, setTogle] = useState(false)

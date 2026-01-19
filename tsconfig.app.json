@@ -28,7 +28,7 @@
       "@src/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
-      "@ui/*": ["./src/components/ui/*"],
+      "@ui/*": ["./src/components/UI/*"],
       "@css/*": ["./src/css/*"]
     }, 
     "types": ["node"]
