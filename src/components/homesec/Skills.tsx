@@ -2,7 +2,7 @@ import Bar from "@src/components/ui/Bar";
 
 export default function Skill() {
     return (
-        <section className="pt-4 mr-6 ml-8 mb-32 pb-12" id="skills">
+        <section className="pt-4 mr-6 ml-8 mb-32 pb-12">
             <h2 className="text-center text-semibold text-3xl md:text-4xl p-6 font-extrabold dark:text-whiteText text-blackText">Skills</h2>
                 <div className="mt-6 flex justify-center h-30 ">
                     <div className="w-full max-w-2xl p-4">
