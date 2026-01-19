@@ -1,4 +1,4 @@
-import "@css/index.css"
+import "../../css/index.css"
 
 type BarType = {
     per: string | number | undefined

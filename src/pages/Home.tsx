@@ -1,6 +1,6 @@
-import AboutMe from "@src/components/HomeSections/Aboutme";
-import Intro from "@src/components/HomeSections/Introduction";
-import Skill from "@src/components/HomeSections/Skills";
+import AboutMe from "@src/components/homesec/Aboutme";
+import Intro from "@src/components/homesec/Introduction";
+import Skill from "@src/components/homesec/Skills";
 import PageLayout from "@src/components/PageLayout";
 
 export default function Home() {
