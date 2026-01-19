@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @tailwind utilities;
-@import "./theme.css";
 
 @layer components {
 
