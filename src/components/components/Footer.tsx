@@ -3,7 +3,7 @@ import { WindowLocalStorageNames } from "@src/constants/constants";
 export default function Footer() {
     return (
         <footer className="rounded-t-4xl shadow dark:bg-footerBlack/50 bg-footerWhite/90  transition-colors duration-750 ease-in-out">
-            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 ">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <button  className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse cursor-text">
                         <img src="/enderdev.jpg" className="h-8 w-8 border-3 rounded-full border-solid border-tinted-200" alt="Flowbite Logo" width={32} height={32} />
