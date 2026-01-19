@@ -10,7 +10,7 @@ interface CardProps {
 
 export default function Card({ img, title, description, buttons }: CardProps) {
     return (
-        <div className="h-80 w-64 mt-10 mb-10 dark:bg-[#26262B] bg-[#E1E2ED] text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out">
+        <div className="h-80 w-64 mt-10 mb-10 dark:bg-black-Card bg-white-Card text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out">
             <div className="m-2">
                 <img className="rounded-lg w-full" src={img} alt={title} height={64} width={64} />
                 <div className="card-content">
