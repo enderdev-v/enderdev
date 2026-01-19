@@ -1,4 +1,4 @@
-import Bar from "@components/UI/Bar";
+import Bar from "@src/components/ui/Bar";
 
 export default function Skill() {
     return (

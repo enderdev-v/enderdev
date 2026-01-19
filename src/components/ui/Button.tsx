@@ -1,4 +1,4 @@
-import { ButtonType } from "@components/UI/Components";
+import { ButtonType } from "@src/components/ui/Components";
 
 export default function Button({ variant = 'outline-info', children, ...props}: ButtonType) {
     return(

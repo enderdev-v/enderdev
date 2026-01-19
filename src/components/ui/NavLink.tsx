@@ -1,4 +1,4 @@
-import '@src/css/index.css'
+import '../../css/index.css'
 import { NavLink as NvLink } from 'react-router'
 
 type NavLinkProps = {

@@ -1,5 +1,5 @@
-import ChangeTheme from "@components/UI/ChangeTheme";
-import Navlink from "@components/UI/NavLink";
+import ChangeTheme from "@src/components/ui/ChangeTheme";
+import Navlink from "@src/components/ui/NavLink";
 import { NavLink as NvLink } from 'react-router'
 import { useState } from "react";
 import '@css/index.css'
