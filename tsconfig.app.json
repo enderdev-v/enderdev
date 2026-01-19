@@ -23,16 +23,21 @@
     "noUncheckedSideEffectImports": true,
 
     /* Custom */ 
-
-    /* Custom */
-
-    "baseUrl": ".",
+   "baseUrl": ".",
     "paths": {
-      "#src/*": ["./src/*"],
-      "#components/*": ["./src/components/*"],
-      "#ui/*": ["./src/componets/ui/*"],
-      "#css/*": ["./src/Styles/*"]
-    },
+      "#src/*": [
+        "src/*"
+      ],
+      "#components/*": [
+        "src/components/*"
+      ],
+      "#ui/*": [
+        "src/components/ui/*"
+      ],
+      "#css/*": [
+        "src/css/*"
+      ]
+    }, 
     "types": ["node"]
   },
   "include": ["src"]
