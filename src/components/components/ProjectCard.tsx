@@ -1,5 +1,5 @@
-import { ProjectButton } from "@/constants/projects";
-import Button from "@/components/ui/Button";
+import { ProjectButton } from "@src/constants/projects";
+import Button from "@src/components/ui/Button";
 
 interface CardProps {
     img: string;
@@ -10,7 +10,7 @@ interface CardProps {
 
 export default function Card({ img, title, description, buttons }: CardProps) {
     return (
-        <div className="h-80 w-64 mt-10 mb-10 dark:bg-gray-800 bg-gray-400 text-black-100 rounded-xl dark:text-white-0 mr-10">
+        <div className="h-80 w-64 mt-10 mb-10 dark:bg-[#26262B] bg-[#E1E2ED] text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out">
             <div className="m-2">
                 <img className="rounded-lg w-full" src={img} alt={title} height={64} width={64} />
                 <div className="card-content">
@@ -26,7 +26,7 @@ export default function Card({ img, title, description, buttons }: CardProps) {
                                 </Button>
                             );
                         })
-                    }
+                        }
                     </div>
                 </div>
             </div>

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+    --color-enderWhite: #F5FAFF;
+    --color-enderBlack: #20232E;
+    --color-whiteText: #F7F7FF;
+    --color-blackText: #0F0F12;
+    --color-enderBlue: #3A5EDE;
+    --color-footerBlack: #2C303D;
+    --color-footerWhite: #F0F0FF;
+}

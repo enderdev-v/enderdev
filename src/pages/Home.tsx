@@ -1,18 +1,17 @@
-import About from "@components/Sections/About";
-import Footer from "@components/Sections/Footer";
-import Intro from "@components/Sections/Intro";
-import Navbar from "@components/Sections/navbar";
-import Skills from "@components/Sections/Skills";
-import '../index.css'
+import AboutMe from "@src/components/homesec/Aboutme";
+import Intro from "@src/components/homesec/Introduction";
+import Skill from "@src/components/homesec/Skills";
+import PageLayout from "@src/components/PageLayout";
 
 export default function Home() {
     return (
-        <>
-            <Navbar></Navbar>
-            <Intro />
-            <About />
-            <Skills />
-            <Footer />
-        </>
+        <PageLayout>
+            <Intro></Intro>
+            <section className="pt-4 mr-6 ml-8 my-12 mb-20" id="About">
+                <h4 className="font-bold text-3xl dark:text-whiteText text-gray-800 text-center p-4 pb-12">About me!</h4>
+                <AboutMe></AboutMe>
+            </section>
+            <Skill></Skill>
+        </PageLayout>
     );
 };

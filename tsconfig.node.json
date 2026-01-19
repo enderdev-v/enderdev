@@ -18,26 +18,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     /* Custom */
-
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@ui/*": [
-        "src/componets/ui/*"
-      ],
-      "@Styles/*": [
-        "src/Styles/*"
-      ]
-    }
-  
-
+      "@src/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@ui/*": ["./src/components/UI/*"],
+      "@css/*": ["./src/css/*"]
+    }, 
   },
   "include": ["vite.config.ts"]
 }
