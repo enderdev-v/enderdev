@@ -1,4 +1,4 @@
-import PageLayout from "#src/components/PageLayout";
+import PageLayout from "@src/components/PageLayout";
 import { NavLink } from "react-router";
 
 export default function Page404() {

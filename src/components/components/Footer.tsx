@@ -1,4 +1,4 @@
-import { WindowLocalStorageNames } from "#src/constants/constants";
+import { WindowLocalStorageNames } from "@src/constants/constants";
 
 export default function Footer() {
     return (

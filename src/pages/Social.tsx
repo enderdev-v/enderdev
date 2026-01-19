@@ -1,6 +1,6 @@
-import SocialCard from "#components/components/SocialCard";
-import { socialCards } from "#src/constants/constants";
-import PageLayout from "#components/PageLayout";
+import SocialCard from "@components/components/SocialCard";
+import { socialCards } from "@src/constants/constants";
+import PageLayout from "@components/PageLayout";
 import '../css/index.css';
 
 export default function Social() {
