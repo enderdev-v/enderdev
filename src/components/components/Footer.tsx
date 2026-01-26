@@ -21,8 +21,8 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <hr className="my-6 sm:mx-auto border-gray-950 dark:border-gray-100 lg:my-8 " />
-                <span className="block text-lg  text-gray-500 sm:text-center"><a href="/" target="_blank" className="hover:underline text-blue-950 dark:text-blue-600">&copy; enderdev-v</a></span>
+                <hr className="my-6 dark:border-enderWhite border-enderBlack" />
+                <span className="block text-lg  text-gray-500 sm:text-center"><a href="/" target="_blank" className="hover:underline text-blue-600">&copy; enderdev-v</a></span>
             </div>
         </footer>
     );
