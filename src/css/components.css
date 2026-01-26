@@ -59,7 +59,7 @@
         @apply  border-indigo-500 hover:bg-indigo-400 
     }
     .outline-secondary {
-        @apply  border-gray-600 hover:bg-gray-400
+        @apply  border-gray-700 hover:bg-gray-600 hover:text-whiteText
     }
     .outline-warn {
         @apply  border-yellow-400 hover:bg-yellow-200
