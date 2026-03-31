@@ -11,18 +11,16 @@ interface Project {
     img: string;
     buttons: ProjectButton[];
 }
-
-const img = "https://camo.githubusercontent.com/af55eb7d080086248f2ff673ce66200c70f4863ed0b370bfd1ff32e010948027/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f62616e6e6572732f3836323930353231313030313530333737342f38353265663261316433356237353461323433396265656136663133353462612e776562703f73697a653d34303936"
     
 export const projects: Project[] = [
     {
         title: "Dev New Tab",
         description: "A Design and functional new tab with features interesting for devs.",
-        img: "https://github.com/enderdev-v/DevStartPage/blob/main/public/Demo.png?raw=true",
+        img: "./Demo.png",
         buttons: [
             {
-                icon: "bx bxl-html5",
-                label: "View",
+                icon: "bx bxs-window-alt",
+                label: "Web",
                 link: "https://dev-start-page.vercel.app/"
             },
             {
@@ -35,7 +33,7 @@ export const projects: Project[] = [
     {
         title: "enderbot",
         description: "My first Discord Bot is made in typescript and Seyfert :D.",
-        img: img,
+        img: "./enderbotBanner.webp",
         buttons: [
             {
                 icon: "bx bxl-discord-alt",
@@ -46,13 +44,13 @@ export const projects: Project[] = [
     },
     {
         title: "Ryosaki Bot",
-        description: "A discord bot with interesting features and yep is multifunctional xD.",
-        img: "https://ryosaki.vercel.app/_next/image?url=%2FCard%2FConfianza.png&w=256&q=75",
+        description: "Just a simple bot to do interesting things in your server :D",
+        img: "./ryosakiBot.webp",
         buttons: [
             {
-                icon: "bx bxl-discord-alt",
-                label: "View",
-                link: "https://ryosaki.vercel.app/"
+                icon: "bx bxs-window-alt",
+                label: "Web",
+                link: "https://ryosaki.netlify.app/"
             },
             {
                 icon: "bx bxl-discord-alt",

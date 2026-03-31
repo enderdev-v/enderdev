@@ -28,7 +28,7 @@ export const socialCards: SocialCard[] = [
                 link: "https://twitter.com/enderdev_v"
             }
         ],
-        avatar: "https://pbs.twimg.com/profile_images/1994961088450879488/bMOCeSNE_400x400.jpg"
+        avatar: "https://pbs.twimg.com/profile_images/2036853361883103232/KCl_LPgO_400x400.jpg"
 
     },
     {

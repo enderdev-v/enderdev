@@ -1,7 +1,7 @@
-import { isMobile } from "@src/Hooks/isMobile";
+import { useMobile } from "@src/Hooks/isMobile";
 
 export default function Skill() {
-    const mobile = isMobile();
+    const mobile = useMobile();
     const langs = "c,css,git,github,java,js,linux,md,mongodb,nextjs,nodejs,prisma,py,react,ts,vite,tailwind"
     const imgurl = mobile ? `https://skillicons.dev/icons?i=${langs}&perline=6` : `https://skillicons.dev/icons?i=${langs}&perline=10`;
     return (

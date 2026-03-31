@@ -2,7 +2,7 @@ import { WindowLocalStorageNames } from "@src/constants/constants";
 
 export default function Footer() {
     return (
-        <footer className="rounded-t-4xl shadow dark:bg-footerBlack/50 bg-footerWhite/90  transition-colors duration-750 ease-in-out">
+            <footer className="rounded-t-4xl shadow dark:bg-footerBlack/50 bg-footerWhite/90 transition-colors duration-700 ease-in-out" id="footer">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 ">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <button  className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse cursor-text">
@@ -11,10 +11,10 @@ export default function Footer() {
                     </button>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
                         <li>
-                            <a href="https://bsky.app/profile/enderdev.bsky.social" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">Bluesky</a>
+                            <a href="https://discord.com/invite/pchahTHgwP" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">enderdevStudios</a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/@enderdev-v/" target="_blank" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">Youtube</a>
+                            <a href="https://github.com/enderdev-Studios" target="_blank" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">Github</a>
                         </li>
                         <li>
                             <button className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText" onClick={() => window.localStorage.removeItem(WindowLocalStorageNames.Theme)}>Delete Cache</button>
