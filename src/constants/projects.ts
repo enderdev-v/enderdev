@@ -44,7 +44,7 @@ export const projects: Project[] = [
     },
     {
         title: "Ryosaki Bot",
-        description: "Just a simple bot to do interesting things in your server :D",
+        description: "Just a simple bot to do interesting things in your server.",
         img: "./ryosakiBot.webp",
         buttons: [
             {
