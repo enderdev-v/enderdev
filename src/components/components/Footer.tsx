@@ -11,10 +11,7 @@ export default function Footer() {
                     </button>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
                         <li>
-                            <a href="https://discord.com/invite/pchahTHgwP" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">enderdevStudios</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/enderdev-Studios" target="_blank" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">Github</a>
+                            <a href="https://discord.com/invite/pchahTHgwP" className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText">enderdev Discord</a>
                         </li>
                         <li>
                             <button className="hover:underline me-4 md:me-6 dark:text-whiteText text-blackText" onClick={() => window.localStorage.removeItem(WindowLocalStorageNames.Theme)}>Delete Cache</button>

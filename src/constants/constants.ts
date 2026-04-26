@@ -20,7 +20,7 @@ export const socialCards: SocialCard[] = [
     {
         title: "enderdev_v",
         img: "https://pbs.twimg.com/profile_banners/1672091526757859331/1764470676/1500x500",
-        description: "  Twitter ^^",
+        description: "  Twitter",
         buttons: [
             {
                 icon: "bx bxl-twitter",
@@ -34,7 +34,7 @@ export const socialCards: SocialCard[] = [
     {
         title: "enderdev_v",
         img: "https://pbs.twimg.com/profile_banners/1672091526757859331/1764470676/1500x500",
-        description: "Instagram ^^",
+        description: "Instagram",
         buttons: [
             {
                 icon: "bx bxl-instagram",
@@ -42,13 +42,13 @@ export const socialCards: SocialCard[] = [
                 link: "https://www.instagram.com/enderdev_v/"
             }
         ],
-        avatar: "/enderdev ig.jpg"
+        avatar: "/enderdevIg.jpg"
 
     },
     {
         title: "enderdev",
         img: "https://cdn.bsky.app/img/banner/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreiegu7hlieyvglhd6szuoj57rpgc67lskje36stcm5keevztn7wddq@jpeg",
-        description: "Bluesky ^^",
+        description: "Bluesky",
         buttons: [
             {
                 icon: "bx bxl-twitter",
@@ -57,6 +57,20 @@ export const socialCards: SocialCard[] = [
             }
         ],
         avatar: "https://cdn.bsky.app/img/avatar/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreidw5yojcjfhjdro6mecf5fb3vkfp23t4jpud4esv2qnld4wmzfzhm@jpeg"
+
+    },
+    {
+        title: "enderdev",
+        img: "https://camo.githubusercontent.com/8eb450ee960e9d8ef6d7cd4052199aace3566d1717b51397bd549c22e8da6500/68747470733a2f2f77616c6c70617065726163636573732e636f6d2f66756c6c2f383830383036382e706e67",
+        description: "Studios",
+        buttons: [
+            {
+                icon: "bx bxl-github",
+                label: "Follow",
+                link: "https://github.com/enderdev-Studios"
+            }
+        ],
+        avatar: "https://avatars.githubusercontent.com/u/227098273?s=200&v=4"
 
     },
 ]   
