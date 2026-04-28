@@ -7,10 +7,6 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-html {
-    transition: background-color 3s, color 0.3s;
-}
-
 html::-webkit-scrollbar {
 	width: 0.30rem;
 }
