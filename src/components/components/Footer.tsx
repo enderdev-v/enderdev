@@ -2,7 +2,7 @@ import { WindowLocalStorageNames } from "@src/constants/constants";
 
 export default function Footer() {
     return (
-            <footer className="rounded-t-4xl shadow dark:bg-footerBlack/50 bg-footerWhite/90 transition-colors duration-700 ease-in-out" id="footer">
+            <footer className="rounded-t-4xl shadow dark:bg-footerBlack/50 bg-footerWhite/90 transition-colors duration-700 ease-in-out border-1 border-b-0 border-x-0 object-cover dark:border-white-Card border-black-Card" id="footer">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 ">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <button  className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse cursor-text">

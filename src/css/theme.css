@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 @theme {
     --color-enderWhite: #F5FAFF;
@@ -10,7 +9,7 @@
     --color-footerBlack: #2C303D;
     --color-footerWhite: #F0F0FF;
     --color-white-Card: #E1E2ED;
-    --color-black-Card: #26262B;
+    --color-black-Card: #32323B;
 
     --color-black-about-0: #0C0C12;
     --color-black-about-1: #11121C;
@@ -20,4 +19,4 @@
     --color-white-about-2: #EBEBF2;
     --color-banana: #fffdbe;
     --color-DarkOcean: #20579E
-}
+}F54927#26262B
