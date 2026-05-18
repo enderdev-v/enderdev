@@ -4,11 +4,11 @@ import { NavLink } from "react-router";
 export default function Page404() {
     return (
         <PageLayout>
-            <div className="flex flex-col items-center justify-center h-screen">
-                <h1 className="text-6xl font-bold mb-4 dark:text-whiteText text-blackText">404</h1>
-                <img className="rounded-lg border-2 border-solid border-sky-600" src="https://cdn.discordapp.com/emojis/1324117835756081235.webp?size=96&animated=true" alt="Ryo Laugh" height={128} width={128}/>
-                <p className="text-2xl mb-8 dark:text-whiteText text-blackText">Oops! The page you're looking for doesn't exist.</p>
-                <NavLink to="/" className="text-enderBlue hover:underline dark:text-enderBlue">Go back to Home</NavLink>
+            <div className="flex flex-col items-center justify-center h-96 max-md:h-auto">
+                <h1 className="text-5xl max-md:text-3xl font-semibold mb-6 dark:text-whiteText text-blackText mt-12">All right, Error 404</h1>
+                <img className="rounded-full border-2 border-solid border-sky-600 my-7" src="https://cdn.discordapp.com/emojis/1324117835756081235.webp?size=96&animated=true" alt="Ryo Laugh" height={160} width={160}/>
+                <p className="text-2xl max-md:text-xl mx-4 mb-0 dark:text-whiteText text-blackText">Oops! The page you're looking for doesn't exist.</p>
+                <NavLink to="/" className="text-enderBlue hover:underline dark:text-enderBlue mt-6">Go back to Home</NavLink>
             </div>
         </PageLayout>
     );

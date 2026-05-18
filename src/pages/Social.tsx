@@ -7,7 +7,7 @@ export default function Social() {
     return (
         <PageLayout>
        
-                <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8" >
+                <div className="m-10 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8" >
                     {socialCards.map((social, index) => (
                         <SocialCard
                             key={index}

@@ -14,7 +14,7 @@ export default function Intro() {
             <div className="flex justify-center text-center mt-2">
                 <main>
                 <h2 className="md:text-4xl text-2xl font-semibold dark:text-whiteText text-blackText transition-colors duration-750 ease-in-out">Hi guys I'm&nbsp;<span className="dark:text-banana text-DarkOcean transition-colors duration-750 ease-in-out">enderdev!</span></h2>
-                <p className="w-72 ml-2 mr-4 pt-3 dark:text-whiteText text-blackText font-semibold text-xl text-wrap text-center transition-colors duration-750 ease-in-out">A random dev that make interesting things</p>
+                <p className="w-72 ml-4 mr-4 pt-3 dark:text-whiteText text-blackText font-semibold text-xl text-balance text-center transition-colors duration-750 ease-in-out">A simple dev who can do interesting things, Nice to meet you!</p>
                 </main>
             </div>
         </section>
