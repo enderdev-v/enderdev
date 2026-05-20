@@ -5,7 +5,7 @@ export default function Intro() {
     return ( 
         <section className="mt-10">
             <div className="flex justify-center items-center p-3 m-4">
-                <img className="image" alt="enderdev avatar" src="/enderdev.jpg" width="192" height="192"/>
+                <img className="image" alt="enderdev avatar" src="/enderdev.png" width="192" height="192"/>
             </div>
             <div className="flex justify-center items-center p-3 m-4">
                 <Button variant="outline-secondary" href="https://github.com/enderdev-v" target="_blank">Github</Button>
