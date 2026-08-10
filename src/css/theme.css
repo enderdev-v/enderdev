@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Monocraft';
+    src: url('https://cdn.jsdelivr.net/gh/IdreesInc/Monocraft@main/dist/Monocraft-ttf/Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @theme {
-    --color-enderWhite: #F5FAFF;
-    --color-enderBlack: #20232E;
+    --font-Monocraft: 'Monocraft', monospace;
+    --color-enderWhite: #e6e9ef;
+    --color-enderBlack: #1e1e2e;
     --color-whiteText: #F7F7FF;
     --color-blackText: #0F0F12;
-    --color-enderBlue: #3A5EDE;
+
+    --color-blue-dark: #2A48B0;
+    --color-blue-light: #3A5EDE;
     --color-footerBlack: #2C303D;
     --color-footerWhite: #F0F0FF;
     --color-white-Card: #E1E2ED;
@@ -18,5 +28,12 @@
     --color-white-about-1: #E6E6F2;
     --color-white-about-2: #EBEBF2;
     --color-banana: #fffdbe;
-    --color-DarkOcean: #20579E
-}F54927#26262B
+    --color-DarkOcean: #20579E;
+
+    --color-introbg-dark: #181825;
+    --color-introbg-light: #e6e9ef;
+
+    --color-terminal-dark: #11111b;
+    --color-terminal-light: #dce0e8;
+}
+
