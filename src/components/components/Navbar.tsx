@@ -5,7 +5,7 @@ import { useState } from "react";
 import '@css/index.css'
 import { useMobile } from "@src/Hooks/isMobile";
 
-export default function Navbar() {
+export default function Navbar({user}: {user:any}) {
     const [togle, setTogle] = useState(false)
     const mobile = useMobile();
     const clase = togle === false ? `navbar top-0 sticky z-10` : `navbar open top-0 sticky z-10`
@@ -42,7 +42,7 @@ export default function Navbar() {
                         <div className="flex-shrink-0">
                             <div className="dark:bg-blue-dark bg-blue-light h-full py-6 px-6 rounded-br-4xl flex items-center text-whiteText">
                                 <span className="font-Monocraft font-extrabold">
-                                    ~/enderdev{window.location.pathname === "/" ? "" : window.location.pathname} {">>"}
+                                    ~/{user}{window.location.pathname === "/" ? "" : window.location.pathname} {">>"}
                                 </span>
                             </div>
                         </div>

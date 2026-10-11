@@ -3,10 +3,10 @@ import Card from "@components/components/ProjectCard";
 import PageLayout from "@src/components/PageLayout";
 import '@css/index.css'
 
-export default function Projects() {
+export default function Projects({ user }: { user: any }) {
 
     return (
-        <PageLayout>
+        <PageLayout user={user}>
             <div className="m-10 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8">
                 {
                     projects.map((project, index) => (

@@ -1,10 +1,10 @@
 import PageLayout from "@src/components/PageLayout";
 import '@css/index.css'
 
-export default function TermsOfService() {
+export default function TermsOfService({ user }: { user: any }) {
 
     return (
-        <PageLayout>
+        <PageLayout user={user}>
             <div className="m-5">
 
                 <h1 className="dark:text-whiteText text-4xl font-Monocraft font-bold text-blackText"> Terms of Service</h1>

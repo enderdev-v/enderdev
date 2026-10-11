@@ -38,7 +38,7 @@ export default function Intro() {
                                     <br />
                                     {'   |             Hi everyone!'}<br />
                                     {' .\'|\'.'}<br />
-                                    {'/.\'|\  \\          I\'m enderdev!'}<br />
+                                    {'/.\'|\\  \\          I\'m enderdev!'}<br />
                                     {'| /|\'.|          A simple dev'}<br />
                                     {' \\ |\\/           who can do'}<br />
                                     {'  \\|/            interesting things'}<br />

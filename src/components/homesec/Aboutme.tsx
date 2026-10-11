@@ -1,5 +1,6 @@
 import { useMobile } from "@src/Hooks/isMobile";
 import Skills from "./Skills";
+import InfoCard from "../components/InfoCard";
 
 export default function AboutMe() {
     const isMobile = useMobile();
@@ -32,19 +33,16 @@ export default function AboutMe() {
         return (
             <section className="my-10" id="About">
                 <div className="bg-gray-300/70 dark:bg-introbg-dark/70 h-full w-full py-12 rounded-4xl">
-                    
+
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-4 p-6 m-2 mt-0">
                         <div className="flex-shrink-0">
 
-                            <div className="max-md:w-72 max-md:h-auto w-xl border border-white/10 bg-gradient-to-br dark:from-slate-700/40 from-slate-300/40 dark:via-slate-900/80 via-slate-100/80 h-72 transition-colors duration-700 ease-in-out rounded-4xl shadow-lg dark:shadow-indigo-200 shadow-gray-400">
-                                <div className="mt-3 text-2xl font-bold text-blackText dark:text-whiteText transition-colors duration-700 ease-in-out mx-4">
-                                    <br />
-                                    <p className="font-normal text-lg m-0 my-4">I'm a developer who loves solving problems.</p>
-                                    <p className="font-normal text-lg m-0 my-4">I code for fun and participate in competitive programming contests.</p>
-                                    <p className="font-normal text-lg m-0 my-4">I can program in many languages; at the moment I prefer C++.</p>
-                                    <p className="font-normal text-lg m-0 my-4 max-md:mb-8 mb-0">Anything else?</p>
-                                </div>
-                            </div>
+                            <InfoCard>
+                                <p className="font-normal text-lg m-0 my-4">I'm a developer who loves solving problems.</p>
+                                <p className="font-normal text-lg m-0 my-4">I code for fun and participate in competitive programming contests.</p>
+                                <p className="font-normal text-lg m-0 my-4">I can program in many languages; at the moment I prefer C++.</p>
+                                <p className="font-normal text-lg m-0 my-4 max-md:mb-8 mb-0">Anything else?</p>
+                            </InfoCard>
                         </div>
 
                         <div className="flex-shrink-0">
@@ -55,11 +53,11 @@ export default function AboutMe() {
                         {/* Profile Image and Buttons */}
 
                         <div className="flex-shrink-0">
-                            <div className="p-4 px-20 m-4 border border-white/10 bg-gradient-to-br dark:from-slate-700/40 from-slate-300/40 dark:via-slate-900/80 via-slate-100/80 transition-colors duration-700 ease-in-out shadow-lg dark:shadow-indigo-200 shadow-gray-400 rounded-4xl">
-                                <h3 className="text-xl font-bold text-blackText dark:text-whiteText text-center">Programming Languages</h3>     
+                            <InfoCard>
+                                <h3 className="text-xl font-bold text-blackText dark:text-whiteText text-center">Programming Languages</h3>
                                 <hr className="dark:border-white/25 border-2 rounded-4xl my-4 border-gray-800/25" />
                                 <img className="" alt="enderdev avatar" src="https://skillicons.dev/icons?i=cpp,python,java,c,ts&perline=6" width="256" height="192" />
-                                <h3 className="text-xl font-bold text-blackText dark:text-whiteText mt-3 text-center">Some Projects</h3>     
+                                <h3 className="text-xl font-bold text-blackText dark:text-whiteText mt-3 text-center">Some Projects</h3>
                                 <hr className="dark:border-white/25 border-2 rounded-4xl my-4 border-gray-800/25" />
                                 <p className="dark:text-whiteText text-blackText">
                                     - enderbot
@@ -69,7 +67,8 @@ export default function AboutMe() {
                                     - ChangeTheme (For my linux)
                                     <br />
                                 </p>
-                            </div>
+                            </InfoCard>
+
                         </div>
                     </div>
                 </div>

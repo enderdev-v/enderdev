@@ -13,6 +13,7 @@ interface SocialCard {
     title: string;
     img: string;
     description: string;
+    bio:string;
     buttons: SocialButton[];
     avatar: string;
 }
@@ -21,6 +22,7 @@ export const socialCards: SocialCard[] = [
         title: "enderdev_v",
         img: "https://pbs.twimg.com/profile_banners/1672091526757859331/1764470676/1500x500",
         description: "  Twitter",
+        bio: "Just a simple user",
         buttons: [
             {
                 icon: "bx bxl-twitter",
@@ -35,6 +37,7 @@ export const socialCards: SocialCard[] = [
         title: "enderdev_v",
         img: "https://pbs.twimg.com/profile_banners/1672091526757859331/1764470676/1500x500",
         description: "Instagram",
+        bio: "🎶 Just a simple dev ...",
         buttons: [
             {
                 icon: "bx bxl-instagram",
@@ -49,6 +52,7 @@ export const socialCards: SocialCard[] = [
         title: "enderdev",
         img: "https://cdn.bsky.app/img/banner/plain/did:plc:qxv7ouhu6dghoojh4tj4lntf/bafkreiegu7hlieyvglhd6szuoj57rpgc67lskje36stcm5keevztn7wddq@jpeg",
         description: "Bluesky",
+        bio: "Just a simple dev",
         buttons: [
             {
                 icon: "bx bxl-twitter",
@@ -63,6 +67,7 @@ export const socialCards: SocialCard[] = [
         title: "enderdev",
         img: "https://camo.githubusercontent.com/8eb450ee960e9d8ef6d7cd4052199aace3566d1717b51397bd549c22e8da6500/68747470733a2f2f77616c6c70617065726163636573732e636f6d2f66756c6c2f383830383036382e706e67",
         description: "Studios",
+        bio: "Just another org",
         buttons: [
             {
                 icon: "bx bxl-github",

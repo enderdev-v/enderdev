@@ -1,10 +1,10 @@
 import PageLayout from "@src/components/PageLayout";
 import '@css/index.css'
 
-export default function PolicyPrivacy() {
+export default function PolicyPrivacy({ user }: { user: any }) {
 
     return (
-        <PageLayout>
+        <PageLayout user={user}>
             <div className="m-5">
 
                 <h1 className="dark:text-whiteText text-4xl font-Monocraft font-bold text-blackText">Policy Privacy</h1>

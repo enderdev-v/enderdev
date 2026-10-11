@@ -1,5 +1,6 @@
 import { useMobile } from "@src/Hooks/isMobile";
 import { useState } from "react";
+import InfoCard from "../components/InfoCard";
 
 async function getRepoStats() {
     try {
@@ -15,12 +16,12 @@ async function getRepoStats() {
         }
         const data = await response.json();
         return data;
-    } catch (error) {
+    } catch (_error) {
         return null;
     }
 }
 
-export default function Stats() {
+export default function Stats({ user, setUser}: {user: any, setUser: any}) {
     const [text, setText] = useState("");
     const [color, setColor] = useState("normal");
 
@@ -51,6 +52,17 @@ export default function Stats() {
             case 'clear':
                 output = "";
                 setText("");
+                break;
+            case 'ch -user': 
+                output = "";
+                setText("");
+                if (user == "enderdev") setUser("risaku")
+                else setUser("enderdev")
+                break;
+            case 'reset': 
+                output = "";
+                setText(output + '\n' + "Sistema reseateado a configuracion default");
+                setUser("enderdev")
                 break;
             default:
                 setText(output + `\n` + "Comando no reconocido. Escribe 'help' para ver los comandos disponibles.");
@@ -84,7 +96,7 @@ export default function Stats() {
                                     {
                                         text.length > 0 ?
                                             <p>
-                                                <span className="dark:text-cyan-500 text-blue-500 mt-8">~/enderdev {'>>'}</span>
+                                                <span className="dark:text-cyan-500 text-blue-500 mt-8">~/{user} {'>>'}</span>
                                                 {text.split('\n').map((line, index) => (
                                                     <span key={index}  >
                                                         {index < 1 ? <span> {line} </span> : <span className={color === "red" ? "text-red-500" : ""}> {line} </span>}
@@ -95,7 +107,7 @@ export default function Stats() {
                                             </p>
                                             : text
                                     }
-                                    <span className="dark:text-cyan-500 text-blue-500 mt-8">~/enderdev {'>>'} </span>
+                                    <span className="dark:text-cyan-500 text-blue-500 mt-8">~/{user} {'>>'} </span>
                                     <input
                                         type="text"
                                         className="bg-transparent border-none focus:outline-none w-50"
@@ -108,7 +120,7 @@ export default function Stats() {
                         {/* Profile Image and Buttons */}
 
                         <div className="flex-shrink-0">
-                            <div className="p-4 px-20 m-4 border border-white/10 bg-gradient-to-br dark:from-slate-700/40 from-slate-300/40 dark:via-slate-900/80 via-slate-100/80 transition-colors duration-700 ease-in-out shadow-lg dark:shadow-indigo-200 shadow-gray-400 rounded-4xl dark:text-whiteText text-blackText">
+                            <InfoCard>
                                 <h4 className="font-bold text-3xl  text-center">Contact me</h4>
                                 <hr className="dark:border-white/25 border-2 rounded-4xl my-4 border-gray-800/25" />
                                 <br />
@@ -119,7 +131,7 @@ export default function Stats() {
                                     <br />
                                     Or reach out to me on <a href="https://twitter.com/enderdev_v" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">Twitter</a> or <a href="https://github.com/enderdev-v" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">Github</a>
                                 </p>
-                            </div>
+                            </InfoCard>
                         </div>
                     </div>
                 </div>

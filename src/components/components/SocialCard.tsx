@@ -1,25 +1,58 @@
 import { ProjectButton } from "@src/constants/projects";
-import Button from "@src/components/ui/Button";
+import React from "react";
+import Button from "../ui/Button";
 
 interface CardProps {
     img: string;
     title: string;
     description: string;
-    buttons: ProjectButton[]
+    buttons: ProjectButton[];
     avatar: string;
+    bio: string;
 }
 
-export default function SocialCard({ img, title, description, buttons, avatar }: CardProps) {
+export default function SocialCard({ img, title, description, buttons, avatar, bio }: CardProps) {
     return (
-        <div className="h-84 w-64 mt-2 mb-2 dark:bg-black-Card bg-white-Card text-blackText rounded-xl dark:text-whiteText mr-10 transition-colors duration-750 ease-in-out dark:shadow-DarkOcean shadow-xl/20  shadow-enderBlack select-none">
-            <div className="mx-2 mt-2">
-                <img className="rounded-lg w-full h-32 border-2 object-cover dark:border-white-Card border-black-Card" src={img} alt={title + " Banner"} height={256} width={256} />
-                <div className="pl-16 relative bottom-16 mb-0">
-                    <img src={avatar} alt={title + " avatar"} className="rounded-full dark:border-white-Card border-black-Card border-2 " height={98} width={98} />
-                    <h3 className="text-lg font-bold mt-2 text-left text-wrap mx-1">{title}</h3>
-                    <span className="text-base text-center mx-4">{description}</span>
+        <div className="flex min-w-0 w-full max-w-[400px] flex-col items-center overflow-hidden rounded-[25px] border border-white/25 bg-white/10 text-blackText shadow-[0_5px_20px_rgba(0,0,0,0.4)] backdrop-blur-sm dark:text-whiteText">
+            <img
+                src={img}
+                alt={`${title} banner`}
+                className="h-28 w-full object-cover"
+            />
+
+            <div className="-mt-20 flex w-full min-w-0 flex-col items-center px-5 pb-5 sm:px-[30px] sm:pb-[30px]">
+                <div className="relative h-[150px] w-[150px]">
+                    <img
+                        src={avatar || img}
+                        alt={`${title} avatar`}
+                        className="h-full w-full rounded-full border-4 border-black-Card object-cover shadow-[0_5px_20px_rgba(0,0,0,0.4)] dark:border-white-Card"
+                        height={150}
+                        width={150}
+                    />
                 </div>
-                <div className=" mx-14 relative bottom-12 flex flex-wrap gap-2">
+
+                <div className="mt-[15px] flex min-w-0 max-w-full flex-col items-center text-center">
+                    <h2 className="max-w-full break-words text-2xl font-semibold leading-tight sm:text-[33px] font-sans">{title}</h2>
+                    <span className="max-w-full break-words text-lg dark:text-gray-300 text-gray-700">{description}</span>
+                </div>
+
+                <div className="mt-[10px] text-center">
+                    <h3 className="font-Monocraft text-lg text-center">
+                        bio
+                    </h3>
+                    <p className="text-base font-mono">
+                        {bio.split("\n").map((s, index) => {
+                            return (
+                                <React.Fragment key={index}>
+                                    {s}
+                                    {index == (bio.split('\n').length - 1) ? <></> : <br />}
+                                </React.Fragment>
+                            )
+                        })}
+                    </p>
+                </div>
+
+                <div className="mt-[30px] flex flex-wrap items-center justify-center gap-4">
                     {buttons.map((button) => {
                         const { icon, label, link } = button;
                         const href = link.startsWith("http") ? link : `https://${link}`;
@@ -33,6 +66,5 @@ export default function SocialCard({ img, title, description, buttons, avatar }:
                 </div>
             </div>
         </div>
-
     );
-};
+}
